@@ -82,19 +82,20 @@ span > i{
     display: flex;
     flex-basis: calc(100% / 7);
     align-items: flex-end;
+    position: relative;
 }
 
-.photos span{
+.photo-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(104, 99, 99, 0.479);
     color: white;
-    width: 40%;
-    font-size: 12px;
-    background-color: #dedede;
     font-weight: bold;
     padding: 5px;
-
-    display:flex;
-    align-items: center;
 }
+
+
 
 /* FOOTER */
 .nav-footer{
