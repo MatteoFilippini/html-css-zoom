@@ -10,12 +10,34 @@ body{
 }
 
 .container{
-    width: 1200px;
-    margin: 0 auto;
+    height: 100vh;
+}
+
+ul{
+    display: flex;
+}
+
+
+li{
+    list-style-type: none;
+    margin: 0 5px
+}
+
+a{
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    font-size: 14px;
 }
 
 /* HEADER */
 .top-header{
+    overflow: hidden;
     background-color: black;
     margin-bottom: 20px;
     padding: 10px 0;
@@ -23,7 +45,6 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* flex-basis: 300px; */
 }
 
 .icon{
@@ -38,10 +59,113 @@ body{
     margin-right: 5px;
 }
 
-span{
-    font-size: 14px;
-}
-
 span > i{
     margin-right: 5px;
 }
+
+/* MAIN */
+main{
+    flex-grow: 1;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.photos{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    margin: 0 5px 10px 0;
+
+    display: flex;
+    flex-basis: calc(100% / 7);
+    align-items: flex-end;
+}
+
+.photos span{
+    color: white;
+    width: 40%;
+    font-size: 12px;
+    background-color: #dedede;
+    font-weight: bold;
+    /* opacity: 0.5; */
+    padding: 5px;
+
+    display:flex;
+    align-items: center;
+}
+
+/* FOOTER */
+
+.nav-footer{
+    background-color: darkgray;
+    margin-bottom: 10px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.nav-footer span,i{
+    padding: 5px;
+    color: white;
+}
+
+.fa-chevron-up:before {
+    font-size: 0.5em;
+}
+
+/* option */
+.option{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+/* menu */
+.main-nav{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+/* exit */
+.btn-exit{
+    display: flex;
+    justify-content: flex-end;   
+    flex-grow: 1;  
+    height: 100%;
+}
+
+.btn-exit a{
+    background-color: #363030;
+    color: red;
+    font-size: 12px;
+    padding: 40px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
