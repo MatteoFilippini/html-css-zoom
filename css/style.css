@@ -7,10 +7,8 @@
 
 body{
     font-family: sans-serif;
-}
-
-.container{
-    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
 }
 
 ul{
@@ -37,7 +35,6 @@ span{
 
 /* HEADER */
 .top-header{
-    overflow: hidden;
     background-color: black;
     margin-bottom: 20px;
     padding: 10px 0;
@@ -64,16 +61,15 @@ span > i{
 }
 
 /* MAIN */
-main{
-    flex-grow: 1;
-}
-
 .wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: scroll;
+    height: 80vh;
+    margin-bottom: 10px;  
+    /* flex-shrink: 2; */
 }
-
 
 .photos{
     background-image: url(https://picsum.photos/id/237/200/300);
@@ -94,7 +90,6 @@ main{
     font-size: 12px;
     background-color: #dedede;
     font-weight: bold;
-    /* opacity: 0.5; */
     padding: 5px;
 
     display:flex;
@@ -102,7 +97,6 @@ main{
 }
 
 /* FOOTER */
-
 .nav-footer{
     background-color: darkgray;
     margin-bottom: 10px;
@@ -111,11 +105,17 @@ main{
     display: flex;
     align-items: center;
     font-size: 1.5em;
+    /* flex-grow: 1; */
+}
+
+.nav-footer i:hover{
+    color: lightgreen;
 }
 
 .nav-footer span,i{
     padding: 5px;
     color: white;
+    transition: color 1s;
 }
 
 .fa-chevron-up:before {
@@ -150,6 +150,8 @@ main{
     font-size: 12px;
     padding: 40px 20px;
 }
+
+
 
 
 
